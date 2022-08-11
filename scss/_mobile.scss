@@ -1,0 +1,104 @@
+//Tablet
+@media(max-width:768px){
+
+    #header{
+    
+        .main-nav{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    }
+
+
+}
+
+// Mobile
+@media(max-width:576px){
+
+    //index.html
+    #header{
+        &__home{
+            height: 10rem;
+            background: url('/public/img/bg.jpeg') no-repeat 40% 20% /cover;
+            border-bottom:3px solid $pink-color;
+
+
+            img{
+                width: 15%;
+                height: 15%;
+                margin-bottom: 20px;
+            }
+           
+        }
+        
+    }
+    .header-content{
+            
+        display: none;
+        
+    }
+    .main-nav{
+       
+        flex-direction: column;
+        align-items: center;
+    
+        
+        
+    }
+    #home{
+        &__a{
+
+            .skills{
+                flex-direction: column;
+                
+                p{
+                    margin-bottom: 25px;
+                }
+            }
+
+        }
+        &__b{
+
+
+           .profile{
+               flex-direction: column;
+           } 
+        }
+    }
+
+    //About.html
+    #header{
+        &__inner{
+            height: 10rem;
+            background: url('/public/img/bg.jpeg') no-repeat 40% 20% /cover;
+            border-bottom:3px solid $pink-color;
+        }
+    }
+    #about{
+        &-a{
+            .info{
+                flex-direction: column;
+
+               img{
+                   width: 100%;
+                   margin-bottom: 50px;
+               }
+            }
+        }
+    }
+    
+    //Projects.html
+
+
+        .item-text{
+            h2{
+                font-size: 5px;
+            }
+        }
+    }
+
+
+    
+

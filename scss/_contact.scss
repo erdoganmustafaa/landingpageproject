@@ -1,0 +1,50 @@
+#contact{
+    &-a{
+        .form-items{
+            display: grid;
+            grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message'
+            'button button';
+
+            gap: 1rem;
+           
+
+            .name{
+                grid-area: name;
+            }
+            .email{
+                grid-area: email;
+            }
+            .subject{
+                grid-area: subject;
+            }
+            .phone{
+                grid-area: phone;
+            }
+            .message{
+                grid-area: message;
+                height: 150px;
+            }
+            .btn-dark{
+                grid-area: button;
+                font-size: 16px;
+                padding: 1rem;
+            }
+            .input{
+                padding: 0.5rem 0.6rem;
+            }
+
+        }
+    }
+    &-b{
+        .contact-info{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    }
+   
